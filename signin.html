@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="signup__container">
+    <form class="signup__form">
+      <h2 class="signup__title"><span>Sign Up</span> for a new account</h2>
+      <p class="signup__subtitle">Create your account to get started</p>
+
+      <div class="signup__input__group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="John Doe" required />
+      </div>
+
+      <div class="signup__input__group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="signup__input__group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required />
+      </div>
+
+      <div class="signup__input__group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="••••••••" required />
+      </div>
+
+      <button class="btn signup__btn" type="submit">Sign Up</button>
+
+      <p class="signup__footer">
+        Already have an account?
+        <a href="./LoginPage.html">Login</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
