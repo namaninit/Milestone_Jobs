@@ -17,9 +17,8 @@
 }
 
 .section__container {
-  max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 8rem 1rem;
 }
 
 .section__header {
@@ -97,8 +96,8 @@ body {
 nav {
   position: fixed;
   isolation: isolate;
+  background-color: #b996f519;
   width: 100%;
-  max-width: var(--max-width);
   margin-inline: auto;
   z-index: 9;
 }
@@ -109,7 +108,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--extra-light);
 }
 
 .nav__menu__btn {
@@ -120,7 +118,7 @@ nav {
 
 .nav__links {
   position: absolute;
-  top: 65px;
+  top: 0px;
   left: 0;
   width: 100%;
   display: flex;
@@ -658,7 +656,56 @@ nav {
   text-align: center;
 }
 
+@media (width > 300px) {
+  .nav__links {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1rem;
+  background-color: #f8f5fe;
+}
+.nav__logo span{
+  display: none;
+}
+}
+
+
+@media (width > 370px) {
+  .nav__links {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2rem;
+  background-color: #f8f5fe;
+}
+}
+
 @media (width > 540px) {
+  .nav__links {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f8f5fe;
+}
   .steps__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -683,7 +730,7 @@ nav {
 @media (width > 768px) {
   nav {
     position: fixed;
-    padding: 2rem 1rem;
+    padding: 1.2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
